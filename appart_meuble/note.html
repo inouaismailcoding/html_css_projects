@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 25px;
+  font-size: 20px;
+  color: #ff9800;
+}
+
+.rating label:before {
+  content: '\2605';
+  position: absolute;
+  opacity: 0;
+}
+
+.rating label:hover:before,
+.rating label:hover ~ label:before,
+.rating input:checked ~ label:before {
+  opacity: 1;
+}
+
+    </style>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excellent">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Good">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Average">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Not good">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Terrible">1 star</label>
+      </div>
+      
+</body>
+</html>

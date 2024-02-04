@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>One property</title>
+</head>
+<body>
+    <div class="text">
+        <p id="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A modi natus vero perferendis blanditiis, deleniti placeat cum reprehenderit tenetur maiores. Tenetur architecto facilis aspernatur quae quo laudantium pariatur et voluptate.</p>
+        <button id="btn">change</button>
+    </div>
+
+
+    <script src="../assets/script.js"></script>
+    <script>
+        document.getElementById('btn').onclick=(e)=>{
+            e.preventDefault();
+            let p = document.getElementById('p');
+            let t='Bonjour Mr Nagui';
+            p.innerHTML="";
+            p.innerHTML=t
+        }
+    </script>
+</body>
+</html>

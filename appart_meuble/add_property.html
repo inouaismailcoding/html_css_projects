@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>add property</title>
+</head>
+<body>
+    <header class="nav">
+        
+        <div class="nav-bar">
+            
+                <a href="" class="icon">
+                    <i>iico<span>ding</span></i>
+                </a>
+            
+            <ul>
+                <li class="nav-item"><a href="#">property</a></li>
+                <li class="nav-item"><a href="#">products</a></li>
+                <li class="nav-item"><a href="#">services</a></li>
+                <li class="nav-item"><a href="#">contact</a></li>
+                <li class="nav-item"><a href="#">about</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>Add a new property </h1>
+    <section class="content">
+        
+        
+        <div class="content-form">
+            <form action="" method="post" class="form-property">
+                
+                <div class="form-div">
+                    <h3>name property</h3>
+                    <div class="info-name-property">
+                        <div class="form-control">
+                            <label for="name">Name Property</label>
+                        <input type="text" name="property" id="id_property" class="form-input-text">
+                        </div>
+                       <div class="form-control">
+                        <label for="id_property_type">Type of Property</label>
+                        <select name="property_type" id="id_property_type" class="form-select">
+                            <option value="">------</option>
+                            <option value="1">Appartement</option>
+                            <option value="2">Duplex</option>
+                            <option value="3">Immeuble</option>
+                        </select>
+                       </div>
+                  
+                   
+                    
+                    </div>
+                    <h3>details property</h3>
+                    <div class="info-detail-property" id="appartment-detail">
+                        <div class="form-control">
+                            <label for="count_bedroom">number of bedroom</label>
+                        <input type="number" name="count_bedroom" id="id_count_bedroom" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="count_bathroom">number of bathroom</label>
+   
+                        <input type="number" name="count_bathroom" id="id_count_bathroom" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_count_saloon">number of saloon</label>
+                        <input type="number" name="count_saloon" id="id_count_saloon" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_surface">surface</label>
+                        <input type="number" name="surface" id="id_surface" class="form-input-number">
+                        </div>
+                    </div>
+                    <div class="info-detail-property" id="immeuble-detail">
+                        <div class="form-control">
+                            <label for="id_count_appartment">number of Appartment</label>
+                        <input type="number" name="count_appartment" id="id_count_appartment" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_count_studio">number of Studio</label>
+   
+                        <input type="number" name="count_studio" id="id_count_studio" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_count_bedroom">number of modern bedroom </label>
+                        <input type="number" name="count_bedroom" id="id_count_bedroom" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_count_escalator">number scalator <small>(optional)</small></label>
+                        <input type="number" name="count_escalator" id="id_count_escalator" class="form-input-number">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_surface">surface <small>(optional)</small></label>
+                        <input type="number" name="surface" id="id_surface" class="form-input-number">
+                        </div>
+                    </div>
+                    <h3>address property</h3>
+                    <div class="info-address-property" id="info-address-property">
+                        <div class="form-control">
+                            <label for="id_country">Country</label>
+                        <select name="country" id="id_country" class="form-select">
+                            <option value="">------</option>
+                            <option value="1">Cameroun</option>
+                            <option value="2">Mali>
+                            <option value="3">Gabon</option>
+                        </select>
+                        </div>
+                        
+                        <div class="form-control">
+                            <label for="id_city">City</label>
+                        <select name="city" id="id_city" class="form-select">
+                            <option value="">------</option>
+                            <option value="1">Douala</option>
+                            <option value="2">Mali_ville
+                            <option value="3">Libreville</option>
+                        </select>
+                        </div>
+                        
+                        
+                        <div class="form-control">
+                            <label for="id_street">street</label>
+                        <input type="text" class="form-input-text" id="id_street" name="street" maxlength="255">
+                        </div>
+                        <div class="form-control">
+                            <label for="id_address">Address</label>
+                        <input type="text" class="form-input-text" id="id_address" name="address" maxlength="255">
+                        </div>
+                    </div>
+                    <h3>Description property</h3>
+                    <div class="info-description-property" id="info-description-property">
+                        <div class="form-control">
+                            <label for="id_description">Description</label><br>
+                        <textarea name="description" id="id_description" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed molestias porro quia modi ducimus a ipsam voluptates officiis beatae. Molestiae dicta dolores ipsam nemo vel aut qui molestias enim!</textarea>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="form-div">
+                <h3>Image Media property</h3>
+                <div class="info-image-property" id="info-image-property">
+                    <div class="item-image">
+                        <input type="file" name="photo" id="" class="form-input-file-image">
+                        <img src="../img/img1.jpg" alt="aucune photo" srcset="" width="240" height="200">
+                    </div>
+                    <div class="item-image">
+                        <input type="file" name="photo" id="" class="form-input-file-image">
+                        <img src="../img/img1.jpg" alt="aucune photo" srcset="" width="240" height="200">
+                    </div>
+                    <div class="item-image">
+                        <input type="file" name="photo" id="" class="form-input-file-image">
+                        <img src="../img/img1.jpg" alt="aucune photo" srcset="" width="240" height="200">
+                    </div>
+                    <div class="item-image">
+                        <input type="file" name="photo" id="" class="form-input-file-image">
+                        <img src="../img/img1.jpg" alt="aucune photo" srcset="" width="240" height="200">
+                    </div>
+                </div>
+               </div>
+                
+                <button type="submit" class="form-button-submit">Enregistrer</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>
